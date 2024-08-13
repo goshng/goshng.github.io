@@ -4,189 +4,131 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Manual Reference Pages - polap (1)</title>
+  <title>polap</title>
   <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    ul.task-list{list-style: none;}
   </style>
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">Manual Reference Pages - polap (1)</h1>
-</header>
-<h1 id="name">NAME</h1>
-<p>polap - plant organelle long-read assembly pipeline</p>
-<h1 id="synopsis">SYNOPSIS</h1>
-<p><code>polap [-h]</code></p>
-<h1 id="description">DESCRIPTION</h1>
-<p>Polap is a meta-assembler pipeline that treats flye as a blackbox
-tool.</p>
-<h1 id="options">OPTIONS</h1>
-<dl>
-<dt><code>-h, --help</code></dt>
-<dd>
-<p>Show the help message and exit</p>
-</dd>
-</dl>
-<h1 id="bugs">BUGS</h1>
-<p>Bugs can be reported and filed at https://github.com/goshng/polap</p>
+<pre><code>POLAP - Plant organelle DNA long-read assembly pipeline.
+version 0.2.4
+
+Usage: polap &lt;menu&gt; [&lt;menu2&gt; [&lt;menu3&gt;]] [-l|--long-reads &lt;arg&gt;] [-o|--outdir &lt;arg&gt;] [-a|--short-read1 &lt;arg&gt;] [-b|--short-read2 &lt;arg&gt;] [--sra &lt;arg&gt;] [-p|--unpolished-fasta &lt;arg&gt;] [-f|--final-assembly &lt;arg&gt;] [-m|--min-read-length &lt;arg&gt;] [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;] [-r|--pair-min &lt;arg&gt;] [-x|--bridge-min &lt;arg&gt;] [-w|--single-min &lt;arg&gt;] [-i|--inum &lt;arg&gt;] [-j|--jnum &lt;arg&gt;] [-g|--genomesize &lt;arg&gt;] [--bioproject &lt;arg&gt;] [--species &lt;arg&gt;] [--accession &lt;arg&gt;] [--query &lt;arg&gt;] [--subject &lt;arg&gt;] [-M|--minimum &lt;arg&gt;] [--(no-)reduction-reads] [--(no-)contigger] [--(no-)all-annotate] [--(no-)use-edges] [--(no-)coverage-check] [--(no-)resume] [-u|--(no-)circularize] [--(no-)test] [-v|--version] [-h|--help]
+       polap &lt;menu&gt; help
+
+menu: list, make-menus, or clean-menus
+  assemble1, annotate, assemble2, flye-polishing,
+  reset, total-length-long, find-genome-size, reduce-data,
+  flye1, blast-genome, count-gene, select-reads, flye2,
+  flye-polishing, check-coverage,
+  prepare-polishing, polish,
+  assemble,
+
+
+
+Menu: assemble1
+
+  polap assemble1 [-o|--outdir &lt;arg&gt;] [-l|--long-reads &lt;arg&gt;] [-a|--short-read1 &lt;arg&gt;] [-b|--short-read2 &lt;arg&gt;] [-m|--min-read-length &lt;arg&gt;] [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;]
+
+  or
+
+  polap reset [-o|--outdir &lt;arg&gt;]
+
+  polap total-length-long [-l|--long-reads &lt;arg&gt;]
+
+  polap find-genome-size  [-a|--short-read1 &lt;arg&gt;] [-b|--short-read2 &lt;arg&gt;]
+
+  polap reduce-data [-l|--long-reads &lt;arg&gt;] [-m|--min-read-length &lt;arg&gt;]
+
+  polap flye1 [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;] [-g|--genomesize &lt;arg&gt;]
+
+
+
+Menu: annotate
+
+  polap annotate [-i|--inum &lt;arg&gt;]
+
+  or
+
+  polap blast-genome [-i|--inum &lt;arg&gt;]
+
+  polap count-genes [-i|--inum &lt;arg&gt;]
+
+
+
+Menu: assemble2
+
+  polap assemble2 [-o|--outdir &lt;arg&gt;] [-l|--long-reads &lt;arg&gt;] [-a|--short-read1 &lt;arg&gt;] [-b|--short-read2 &lt;arg&gt;] [-m|--min-read-length &lt;arg&gt;] [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;]
+
+  or
+
+  polap select-reads [-i|--inum &lt;arg&gt;] [-j|--jnum &lt;arg&gt;] [-r|--pair-min &lt;arg&gt;] [-x|--bridge-min &lt;arg&gt;] [-w|--single-min &lt;arg&gt;]
+
+  polap flye2 [-j|--jnum &lt;arg&gt;] [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;]
+
+
+
+Menu: polishing
+
+  polap flye-polishing  [-j|--jnum &lt;arg&gt;] [-t|--threads &lt;arg&gt;] [-c|--coverage &lt;arg&gt;]
+
+  polap prepare-polishing  [-a|--short-read1 &lt;arg&gt;] [-b|--short-read2 &lt;arg&gt;]
+
+  polap polish [-p|--unpolished-fasta &lt;arg&gt;] [-f|--final-assembly &lt;arg&gt;]
+
+
+
+Options:
+
+  -o, --outdir: output folder name (default: o)
+
+  -l, --long-reads: long-reads data file in fastq format (default: &#39;l.fq&#39;)
+
+  -a, --short-read1: short-read fastq file 1 (default: &#39;s1.fq&#39;)
+
+  -b, --short-read2: short-read fastq file 2 (default: &#39;s2.fq&#39;)
+
+  -p, --unpolished-fasta: polishing sequence in fasta format (default: &#39;mt.0.fasta&#39;)
+
+  -f, --final-assembly: final assembly in fasta format (default: &#39;mt.1.fa&#39;)
+
+  -m, --min-read-length: minimum length of long reads (default: &#39;3000&#39;)
+
+  -t, --threads: number of CPUs (default: &#39;56&#39;)
+
+  -c, --coverage: coverage for the 2nd assembly (default: &#39;30&#39;)
+
+  -r, --pair-min: minimum mapped bases or PAF 11th column (default: &#39;3000&#39;)
+
+  -x, --bridge-min: minimum bridging read length or PAF 7th column (default: &#39;3000&#39;)
+
+  -w, --single-min: minimum mapped bases or PAF 11th column (default: &#39;3000&#39;)
+
+  -i, --inum: previous output number of organelle-genome assembly (default: &#39;0&#39;)
+
+  -j, --jnum: current output number of organelle-genome assembly (default: &#39;1&#39;)
+
+  -g, --genomesize: expected genome size (no default)
+
+  -u, --circularize, --no-circularize: circularize a contig (off by default)
+
+  -v, --version: Prints version
+
+  -h, --help: Prints help
+
+
+
+Places your long-read and short-read files at a folder.
+
+long-read file [l.fq]
+
+short-read files [s1.fq] and [s2.fq]
+
+Execute: polap reset</code></pre>
 </body>
 </html>
